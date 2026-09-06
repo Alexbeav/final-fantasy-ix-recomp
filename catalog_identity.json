@@ -1,0 +1,126 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Final Fantasy IX",
+    "id": "SLUS-01251",
+    "boot_exe": "SLUS_012.51"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Final Fantasy IX (USA, Canada) (Disc 1) (Rev 1).cue",
+    "bin_name": "Final Fantasy IX (USA, Canada) (Disc 1) (Rev 1).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": false,
+    "data_track": {
+      "size": 740715360,
+      "md5": "aabe193e058f166d1a88d99219792598",
+      "sha1": "8b8feaf91f63ae615d763803b094833dc20ca63c",
+      "crc32": "7a46108f"
+    },
+    "disc_fp": "89b3c754267a04afd4ec78c5f0dfc6b05a78be78943b679a4c2b3dbb73fd2d75",
+    "discs": [
+      {
+        "index": 1,
+        "cue_name": "Final Fantasy IX (USA, Canada) (Disc 1) (Rev 1).cue",
+        "bin_name": "Final Fantasy IX (USA, Canada) (Disc 1) (Rev 1).bin",
+        "size": 740715360,
+        "md5": "aabe193e058f166d1a88d99219792598",
+        "sha1": "8b8feaf91f63ae615d763803b094833dc20ca63c",
+        "crc32": "7a46108f",
+        "track_count": 1,
+        "tracks": [
+          {
+            "name": "Final Fantasy IX (USA, Canada) (Disc 1) (Rev 1).bin",
+            "size": "740715360",
+            "crc": "7a46108f",
+            "md5": "aabe193e058f166d1a88d99219792598",
+            "sha1": "8b8feaf91f63ae615d763803b094833dc20ca63c"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "cue_name": "Final Fantasy IX (USA, Canada) (Disc 2) (Rev 1).cue",
+        "bin_name": "Final Fantasy IX (USA, Canada) (Disc 2) (Rev 1).bin",
+        "size": 689004288,
+        "md5": "a18dfcec1e01c4616cdf1bedd0e2b89a",
+        "sha1": "232c9b94f232006798f466c126a121d256e4122b",
+        "crc32": "575e60d5",
+        "track_count": 1,
+        "tracks": [
+          {
+            "name": "Final Fantasy IX (USA, Canada) (Disc 2) (Rev 1).bin",
+            "size": "689004288",
+            "crc": "575e60d5",
+            "md5": "a18dfcec1e01c4616cdf1bedd0e2b89a",
+            "sha1": "232c9b94f232006798f466c126a121d256e4122b"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "cue_name": "Final Fantasy IX (USA, Canada) (Disc 3) (Rev 1).cue",
+        "bin_name": "Final Fantasy IX (USA, Canada) (Disc 3) (Rev 1).bin",
+        "size": 729755040,
+        "md5": "5aa1d8663d6b9b50b3ce6112b3cccf23",
+        "sha1": "f7177bd1194ff1a642494cf867819d2d3b897c99",
+        "crc32": "a1d53b67",
+        "track_count": 1,
+        "tracks": [
+          {
+            "name": "Final Fantasy IX (USA, Canada) (Disc 3) (Rev 1).bin",
+            "size": "729755040",
+            "crc": "a1d53b67",
+            "md5": "5aa1d8663d6b9b50b3ce6112b3cccf23",
+            "sha1": "f7177bd1194ff1a642494cf867819d2d3b897c99"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "cue_name": "Final Fantasy IX (USA, Canada) (Disc 4) (Rev 1).cue",
+        "bin_name": "Final Fantasy IX (USA, Canada) (Disc 4) (Rev 1).bin",
+        "size": 688413936,
+        "md5": "5796b286ddd0335db2d9631701153a42",
+        "sha1": "ce78c21e3793e04e594429133b05ddf24ed3fc6b",
+        "crc32": "a4c892a4",
+        "track_count": 1,
+        "tracks": [
+          {
+            "name": "Final Fantasy IX (USA, Canada) (Disc 4) (Rev 1).bin",
+            "size": "688413936",
+            "crc": "a4c892a4",
+            "md5": "5796b286ddd0335db2d9631701153a42",
+            "sha1": "ce78c21e3793e04e594429133b05ddf24ed3fc6b"
+          }
+        ]
+      }
+    ]
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80012B68",
+    "text_size": "0x001DE000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 979,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

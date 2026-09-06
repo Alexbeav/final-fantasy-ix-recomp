@@ -1,0 +1,46 @@
+
+[game]
+name = "Final Fantasy IX"
+id = "SLUS-01251"
+players = 1
+exe = "disc/SLUS_012.51"
+disc = "disc/Final Fantasy IX (USA, Canada) (Disc 1) (Rev 1).cue"
+load_address = "0x80010000"
+entry_pc = "0x80012B68"
+text_size = "0x001DE000"
+stack_base = "0x801FFFF0"
+discs = ["disc/Final Fantasy IX (USA, Canada) (Disc 1) (Rev 1).cue", "disc/Final Fantasy IX (USA, Canada) (Disc 2) (Rev 1).cue", "disc/Final Fantasy IX (USA, Canada) (Disc 3) (Rev 1).cue", "disc/Final Fantasy IX (USA, Canada) (Disc 4) (Rev 1).cue"]
+disc_serials = ["SLUS-01251", "SLUS-01295", "SLUS-01296", "SLUS-01297"]
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Final Fantasy IX (USA, Canada) (Disc 1) (Rev 1).bin"
+cue_name = "Final Fantasy IX (USA, Canada) (Disc 1) (Rev 1).cue"
+boot_exe = "SLUS_012.51"
+known_sizes = [740715360]
+known_md5 = ["aabe193e058f166d1a88d99219792598"]
+known_sha1 = ["8b8feaf91f63ae615d763803b094833dc20ca63c"]
+known_crc32 = ["7a46108f"]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Final Fantasy IX Recompiled"
+memcard_dir = "saves"
+openbios = false
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "89b3c754267a04afd4ec78c5f0dfc6b05a78be78943b679a4c2b3dbb73fd2d75"
